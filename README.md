@@ -2,6 +2,10 @@
 
 This repository contains my attempts (and hopefully) solutions to Advent of Code 2018 problems.
 
+## Reading Code
+
+If you just want to read code, navigate to `Day X.playground / Pages / Y.xcplaygroundpage / Contents.swift` for each respective day / star.
+
 ## Swift Playgrounds and Input Data
 
 I've decided to use Swift Playgrounds with Xcode 10 / Swift 4.2 for the problems this year.
