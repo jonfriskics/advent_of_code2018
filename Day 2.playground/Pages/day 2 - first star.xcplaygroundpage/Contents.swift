@@ -14,15 +14,12 @@ for string in array {
   let dict = string.map { ($0, 1) }
   let counts = Dictionary(dict, uniquingKeysWith: + )
   
-  let two_counts = counts.filter { $0.value == 2}.count
-  let three_counts = counts.filter { $0.value == 3}.count
-  
-  if(two_counts > 0) {
+  if(counts.filter { $0.value == 2}.count > 0) {
     count_of_two += 1
   }
-  if(three_counts > 0) {
+  if(counts.filter { $0.value == 3}.count > 0) {
     count_of_three += 1
   }
 }
-count_of_two
-count_of_three
+
+count_of_two * count_of_three
